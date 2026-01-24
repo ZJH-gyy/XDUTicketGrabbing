@@ -4,7 +4,7 @@
 ![Deployment](https://img.shields.io/badge/Deployment-fly%2Eio-purple)
 ![Notification](https://img.shields.io/badge/Notification-Server%20酱-orange)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/yourusername/XDUTicketGrabbing)](https://github.com/yourusername/XDUTicketGrabbing/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/PHTPSN/XDUTicketGrabbing)](https://github.com/PHTPSN/XDUTicketGrabbing/releases)
 
 众所周知，西电人的体育热情非常高，体育场馆席位常常在中午 12:00 放票的一瞬间就被一抢而空。即使你相信自己的手速，也无法保证每天都能记得抢票。本项目旨在自动化抢票流程，让你无需蹲点抢票，你只需要在收到微信里抢票成功通知后于 30 分钟内进入体育场馆预约系统完成支付即可。
 

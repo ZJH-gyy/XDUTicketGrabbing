@@ -26,6 +26,8 @@ coverage/
 # Build outputs
 dist/
 build/
+release*
+*.zip
 
 # IDE
 .vscode/
