@@ -1,0 +1,2 @@
+*.{png,jpg,jpeg} filter=lfs diff=lfs merge=lfs -text
+*.md diff=markdown

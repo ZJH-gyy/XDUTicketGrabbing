@@ -1,0 +1,25 @@
+{
+  "name": "xdu-ticket-grabbing",
+  "version": "1.0.0",
+  "description": "体育馆抢票机器人",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "got": "^11.8.6",
+    "tough-cookie": "^6.0.0",
+    "canvas": "^3.1.0",
+    "cheerio": "^1.0.0-rc.12",
+    "crypto-js": "^4.2.0",
+    "node-cron": "^3.0.3",
+    "prompts": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
