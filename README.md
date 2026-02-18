@@ -6,6 +6,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/PHTPSN/XDUTicketGrabbing)](https://github.com/PHTPSN/XDUTicketGrabbing/releases)
 
+**XDU 体育馆自动抢票助手 | Automated Ticket Grabber for Xidian University**
+
+一个为西安电子科技大学学生开发的自动抢票工具，支持定时抢票、自动登录、微信通知和在线验证码平台。
+
+**关键特性**: 自动登录 | 定时抢票 | 微信通知 | 验证码处理 | Node.js | 轻量服务器部署
+
+**Keywords**: 抢票, 预约, 自动化, 体育馆, 西电, XDU, ticket grabbing, appointment, automation
+
 众所周知，西电人的体育热情非常高，体育场馆席位常常在中午 12:00 放票的一瞬间就被一抢而空。即使你相信自己的手速，也无法保证每天都能记得抢票。本项目旨在自动化抢票流程，让你无需蹲点抢票，你只需要在收到微信里抢票成功通知后于 30 分钟内进入体育场馆预约系统完成支付即可。
 
 本项目能维持校园账户登录，对于验证码的问题，项目会维持一个在线的验证码输入平台，如果登录信息过期，会通过微信提示你前往该平台输入验证码完成登录。
