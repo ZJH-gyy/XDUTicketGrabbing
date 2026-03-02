@@ -100,7 +100,7 @@ fly secrets set IDS_PASSWORD=your_password
 |北校区乒乓球|008|
 |北校区篮球|009|
 
-备注：场地类型信息可能会更新，可以在浏览器中进入体育馆系统页面，进入开发者模式，选择 Network 项,打开对应场地，找到开头是 `https://tybsouthgym.xidian.edu.cn/Field/GetVenueStateNew?` 的请求，其中`FieldTypeNo` 后面的值就是场地编号。
+备注：场地类型信息可能会更新，可以在浏览器中进入体育馆系统页面，进入开发者模式，选择 Network 项，打开对应场地，找到开头是 `https://tybsouthgym.xidian.edu.cn/Field/GetVenueStateNew?` 的请求，其中 `FieldTypeNo` 后面的值就是场地编号。
 
 ### 2. 云服务器部署
 
@@ -126,7 +126,7 @@ fly secrets set IDS_PASSWORD=your_password
 
     ```toml
     app = ''
-    primary_region = 'sin'
+    primary_region = 'iad'
 
     [build]
       dockerfile = 'Dockerfile'
@@ -145,8 +145,8 @@ fly secrets set IDS_PASSWORD=your_password
       # 更宽松的健康检查
       [[http_service.checks]]
         interval = '30s'
-        timeout = '10s'
-        grace_period = '120s'
+        timeout = '5s'
+        grace_period = '60s'
         method = 'GET'
         path = '/health'
 
@@ -164,12 +164,12 @@ fly secrets set IDS_PASSWORD=your_password
 
 1. 在 Dashboard 中查看你的应用地址，或使用命令行：
     ```bash
-    fly info
+    fly status
     ```
 
     更新 `config.json` 和环境变量（见[配置](#1-配置)）。
 
-1. 启动服务
+1. 启动服务，并将实例数量设置为 1：
 
     ```bash
     fly deploy
@@ -184,9 +184,13 @@ fly secrets set IDS_PASSWORD=your_password
 
 ### 4. 验证码平台使用
 
-当登录信息过期时，系统会通过微信发送通知，提示你前往验证码输入平台。点击通知中的链接或直接访问你的应用地址，根据提示完成验证码输入即可。
+当登录信息过期时，系统会通过微信发送通知，提示你前往验证码输入平台。点击通知中的链接或直接访问你的应用地址，根据提示完成验证码输入即可。应用当前设置了在抢票前半小时检查登录状态，不过还是建议在部署完应用时就前往验证码平台完成首次登录。
 
-### 5. 监控和维护
+### 5. 确认订单
+
+通知提醒抢到票后，在体育馆系统中，打开“我的-场地订单”，支付或取消订单，注意 30 分钟的订单有效时间。
+
+### 6. 监控和维护
 
 查看日志：
 
