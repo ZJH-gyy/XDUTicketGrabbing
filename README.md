@@ -102,6 +102,8 @@ fly secrets set IDS_PASSWORD=your_password
 
 备注：场地类型信息可能会更新，可以在浏览器中进入体育馆系统页面，进入开发者模式，选择 Network 项，打开对应场地，找到开头是 `https://tybsouthgym.xidian.edu.cn/Field/GetVenueStateNew?` 的请求，其中 `FieldTypeNo` 后面的值就是场地编号。
 
+考虑到晚上的票比较难抢，而周末白天的票比较容易抢到这一情况，目前仅支持提前两天抢晚上的票，如有需求，可联系作者增加功能。
+
 ### 2. 云服务器部署
 
 #### 2.1 准备工作
