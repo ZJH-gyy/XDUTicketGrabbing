@@ -3,7 +3,7 @@
     "dateadd": 2,
     "TimePeriod": 2,
     "VenueNo": "01",
-    "FieldTypeNo": "006",
+    "FieldTypeNo": "001",
     "targetTime": "12:00",
     "stopTime": "13:00",
     "stopTimeDateAdd": 0,
