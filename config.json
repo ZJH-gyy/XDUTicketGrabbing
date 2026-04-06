@@ -12,7 +12,7 @@
   "notification": {
     "SendKey": null,
     "title": "抢票系统通知",
-    "enable": false
+    "enable": ture
   },
   "server": {
     "location": "" 
