@@ -1,0 +1,20 @@
+{
+  "ticket": {
+    "dateadd": 2,
+    "TimePeriod": 2,
+    "VenueNo": "01",
+    "FieldTypeNo": "006",
+    "targetTime": "12:00",
+    "stopTime": "13:00",
+    "stopTimeDateAdd": 0,
+    "retryInterval": 2000
+  },
+  "notification": {
+    "SendKey": null,
+    "title": "抢票系统通知",
+    "enable": false
+  },
+  "server": {
+    "location": "" 
+  }
+}
